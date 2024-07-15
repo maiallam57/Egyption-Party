@@ -58,8 +58,8 @@ This project is licensed under the MIT License.
 
 ## Follow Me
 
-For more projects and updates, follow me on GitHub: [Mai Allam](https://github.com/maiallam57)
-Follow me on LinkedIn: [Mai Allam](https://www.linkedin.com/in/maiallam57/)
+- For more projects and updates, follow me on GitHub: [Mai Allam](https://github.com/maiallam57)
+- Follow me on LinkedIn: [Mai Allam](https://www.linkedin.com/in/maiallam57/)
 
 ## Contact
 
