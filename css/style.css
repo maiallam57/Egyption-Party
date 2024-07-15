@@ -1,6 +1,7 @@
 :root {
     --white: #fff;
     --bg-header: rgba(214, 46, 51, 0.6);
+    --black: black;
 }
 
 
@@ -40,3 +41,22 @@
 #singer div {
     background-color: #ccc;
 }
+
+
+/* ! =================== COUNT =================== */
+#count {
+    background-image: url(../images/invitation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.count-overlay {
+    background-color: var(--bg-header);
+}
+
+.tim {
+    border: 1px solid var(--white);
+    font-weight: 500;
+    font-size: 30px;
+}
+
