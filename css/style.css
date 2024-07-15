@@ -2,6 +2,8 @@
     --white: #fff;
     --bg-header: rgba(214, 46, 51, 0.6);
     --black: black;
+    --gray: #999;
+    --red: #D62E33;
 }
 
 
@@ -60,3 +62,32 @@
     font-size: 30px;
 }
 
+
+/* ! =================== CONTACT =================== */
+#contact h3 {
+    font-size: 1.5rem;
+}
+
+.social-list i {
+    margin-right: 10px;
+    border: 1px solid var(--gray);
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.social-list i:hover {
+    background-color: var(--red);
+
+}
+
+input,
+textarea {
+    --bs-border-color: var(--gray);
+    --bs-border-radius: 0;
+}
+
+button {
+    background-color: var(--red) !important;
+}
