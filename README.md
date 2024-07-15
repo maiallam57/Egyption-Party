@@ -15,7 +15,6 @@ Egyptian Party is a vibrant and interactive web application designed to celebrat
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
-![GitHub](https://img.shields.io/badge/Github-%23000000.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
 ## Demo and Source Code
