@@ -68,6 +68,10 @@
     font-size: 1.5rem;
 }
 
+.icons a {
+    cursor: pointer;
+}
+
 .social-list i {
     margin-right: 10px;
     border: 1px solid var(--gray);

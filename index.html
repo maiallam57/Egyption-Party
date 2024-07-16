@@ -100,43 +100,66 @@
                         </p>
 
                         <div class="icons text-center">
-                            <p class="mb-5"><i class="fa fa-map-marker"></i> New
-                                Street
-                                22545, Nexa Road, New York City, USA</p>
-                            <p class="mb-5 text-danger"><i
+                            <a target="_blank"
+                                herf="https://www.google.com/maps/place/NexaComm/@40.7430001,-73.9960749,17z/data=!3m2!4b1!5s0x89c25906c83a9b03:0xb63df97e997d8969!4m6!3m5!1s0x89c259a4bf06e3a5:0x493f80dbd27a5648!8m2!3d40.7429961!4d-73.9935!16s%2Fg%2F11cs3ztzbx?entry=ttu"
+                                class="text-secondary text-decoration-none d-block mb-5">
+                                <i class="fa fa-map-marker"></i> New
+                                Street 22545, Nexa Road, New York City, USA</a>
+                            <a herf="mailto:hello@uigrid.com" target="_blank"
+                                class="text-secondary text-decoration-none d-block mb-5 text-danger"><i
                                     class="fa fa-envelope text-secondary"></i>
-                                hello@uigrid.com</p>
-                            <p class="mb-5"><i class="fa fa-phone"></i>
-                                001-000-000-000</p>
+                                hello@uigrid.com</a>
+                            <a herf="tel:+001-000-000-00" target="_blank"
+                                class="text-secondary text-decoration-none d-block mb-5"><i
+                                    class="fa fa-phone"></i>
+                                001-000-000-000</a>
                         </div>
 
                         <div class="social-list">
-                            <i class="fab fa-twitter fa-fw text-center"></i>
-                            <i class="fab fa-facebook-f fa-fw text-center"></i>
-                            <i class="fab fa-instagram fa-fw text-center"></i>
-                            <i class="fab fa-dribbble fa-fw text-center"></i>
-                            <i class="fab fa-pinterest fa-fw text-center"></i>
-                        </div>
+                            <a href="#" target="_blank"
+                                class="text-decoration-none text-secondary"><i
+                                    class="fab fa-twitter fa-fw text-center"></i>
+                            </a> <a href="#" target="_blank"
+                                class="text-decoration-none text-secondary"><i
+                                    class="fab fa-facebook-f fa-fw text-center"></i></a>
+                            <a href="#" target="_blank"
+                                class="text-decoration-none text-secondary"><i
+                                    class="fab fa-instagram fa-fw text-center"></i>
+                            </a> <a href="#" target="_blank"
+                                class="text-decoration-none text-secondary"><i
+                                    class="fab fa-dribbble fa-fw text-center"></i>
+                            </a> <a href="#" target="_blank"
+                                class="text-decoration-none text-secondary"><i
+                                    class="fab fa-pinterest fa-fw text-center"></i>
+                            </a> </div>
 
                     </div>
 
                     <div class="col-md-6 p-3">
 
                         <div>
+                            <span id="nameAlert"
+                                class="text-danger mb-3 d-none">Invaild
+                                Name!</span>
                             <input type="text" class="form-control mb-4"
+                                id="nameInput"
                                 placeholder="Enter Name">
 
+                            <span id="emailAlert"
+                                class="text-danger mb-3 d-none">Invaild
+                                Email!</span>
                             <input type="email" class="form-control mb-4"
+                                id="emailInput"
                                 placeholder="Enter Email">
 
                             <textarea class="form-control mb-4 w-100" rows="7"
                                 placeholder="Enter Message"></textarea>
 
                             <span id="remainedChars"
-                                class="text-danger mb-3">100</span> Characyer
-                            Reamining
+                                class="text-danger mb-3">100</span> Characters
+                            Left
 
-                            <button type="submit"
+                            <button type="submit" id="submitBtn" disabled
                                 class="d-block btn btn-danger rounded-0 mt-3 p-2 px-4">Send
                                 Message</button>
                         </div>
