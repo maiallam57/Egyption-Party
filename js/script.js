@@ -49,7 +49,7 @@ function countDownTo(targetDate) {
     $("#days").html(`${days} D`);
     $("#hours").html(`${hours} h`);
     $("#minutes").html(`${minutes} m`);
-    $('#seconds').html(`${seconds} s`)
+    $('#seconds').html(`${seconds} s`);
 
 
     setInterval(function () { countDownTo(targetDate); }, 1000);
@@ -129,21 +129,43 @@ const regex = {
 window.onload = function () {
     //? <!-- =============== COUNT =================== -->
     countDownTo("25 october 2023 11:58:00");
+    $('#singer').hide()
 }
 
-
 $(document).ready(function () {
+
     //? <!-- ============= SIDEBAR =================== -->
     $("#openBtn").on('click', openNav);
     $("#closeBtn").on('click', closeNav);
 
-
     //? <!-- ============= SINGERS =================== -->
     $('#singer h3').on('click', function () {
         $(this).siblings('h3').next('div').slideUp("slow");
-
         $(this).next().slideToggle("slow")
-    })
+    });
 
+    //? <!-- ============= CONTACT =================== -->
     regex.init();
+
+    //? <!-- ============= ANIMTION =================== -->
+    $(document).scroll(function () {
+        var contactOffset = $('#contact').offset().top;
+        var contactHeight = $('#contact').outerHeight();
+
+        var singerOffset = $('#singer').offset().top;
+        var singerHeight = $('#singer').outerHeight();
+
+        var windowHeight = $(window).height();
+        var scrollPosition = $(window).scrollTop();
+
+        if (scrollPosition + windowHeight >= singerOffset && scrollPosition <= singerOffset + singerHeight) {
+            $('#singer').slideDown('slow');
+        }
+
+        if (scrollPosition + windowHeight >= contactOffset && scrollPosition <= contactOffset + contactHeight) {
+            $('#left').animate({ top: `0px`, left: `0rem` }, 1000);
+            $('#right').animate({ top: `0px`, left: `0rem` }, 1000);
+        }
+    });
+
 });

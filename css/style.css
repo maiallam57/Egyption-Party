@@ -125,3 +125,14 @@ textarea {
 button {
     background-color: var(--red) !important;
 }
+
+
+#left {
+    position: relative;
+    left: -25rem;
+}
+
+#right {
+    position: relative;
+    right: -25rem;
+}
