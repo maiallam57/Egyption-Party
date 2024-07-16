@@ -46,7 +46,7 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 
-![EgyptianParty](https://via.placeholder.com/800x400.png?text=Screenshot+coming+soon)
+![EgyptianParty](https://raw.githubusercontent.com/maiallam57/Egyption-Party/main/images/cover.png)
 
 ## Contributing
 
