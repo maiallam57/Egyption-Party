@@ -32,19 +32,6 @@ function countDownTo(targetDate) {
 }
 
 //! <!-- ================= CONTACT =================== -->
-// function calculateChars(msgLength) {
-//     const maxLength = 100;
-//     let remainedChars = maxLength - msgLength;
-//     $("#remainedChars").html(`${remainedChars}`);
-//     if (msgLength > maxLength) {
-//         $("#submitBtn").attr("disabled", true);
-//         $("#remainedChars").text("Your available character finished!");
-//     } else if (msgLength < 1) {
-//         $("#submitBtn").attr("disabled", true);
-//         $("#remainedChars").text("Please, write your message!");
-//     }
-// }
-
 const regex = {
     name: /^[a-zA-Z ]+$/,
     email: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
@@ -126,11 +113,6 @@ $(document).ready(function () {
 
         $(this).next().slideToggle("slow")
     })
-
-
-    // $('textarea').on('keyup', function (eventInfo) {
-    //     calculateChars($(this).val().length)
-    // })
 
     regex.init();
 });
