@@ -1,4 +1,4 @@
-//! <!-- =================== SINGERS =================== -->
+//! <!-- ================= SINGERS =================== -->
 $('#singer div').hide();
 $('.singer-one').show();
 
@@ -31,14 +31,18 @@ function countDownTo(targetDate) {
 
 }
 
+//! <!-- ================= CONTACT =================== -->
+
+
 
 window.onload = function () {
-    countDownTo("10 october 2021 9:56:00");
+    //? <!-- =============== COUNT =================== -->
+    countDownTo("25 october 2023 11:58:00");
 }
 
 
 $(document).ready(function () {
-    //! <!-- =============== SINGERS =================== -->
+    //? <!-- ============= SINGERS =================== -->
     $('#singer h3').on('click', function () {
         $(this).siblings('h3').next('div').slideUp("slow");
 
