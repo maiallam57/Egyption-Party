@@ -1,3 +1,27 @@
+//! <!-- ============= SIDEBAR =================== -->
+function loopForNavItems(top, left) {
+    for (let i = 0; i < 4; i++) {
+        $(".side-bar a").eq(i).animate({
+            top: `${top}px`,
+            left: `${left}rem`
+        }, (i + 4) * 100)
+    }
+}
+
+function closeNav() {
+    loopForNavItems(300, -17);
+    $(".side-bar").animate({ left: "-17rem" }, 1000);
+    $("#openBtn").animate({ left: "0rem" }, 1000);
+
+}
+
+function openNav() {
+    $("#openBtn").animate({ left: "17rem" }, 1000);
+    $(".side-bar").animate({ left: "0rem" }, 1000, function () {
+        loopForNavItems(0, 0)
+    });
+}
+
 //! <!-- ================= SINGERS =================== -->
 $('#singer div').hide();
 $('.singer-one').show();
@@ -100,6 +124,7 @@ const regex = {
 };
 
 
+
 window.onload = function () {
     //? <!-- =============== COUNT =================== -->
     countDownTo("25 october 2023 11:58:00");
@@ -107,6 +132,11 @@ window.onload = function () {
 
 
 $(document).ready(function () {
+    //? <!-- ============= SIDEBAR =================== -->
+    $("#openBtn").on('click', openNav);
+    $("#closeBtn").on('click', closeNav);
+
+
     //? <!-- ============= SINGERS =================== -->
     $('#singer h3').on('click', function () {
         $(this).siblings('h3').next('div').slideUp("slow");
