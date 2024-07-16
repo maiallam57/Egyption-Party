@@ -53,6 +53,7 @@
 
 #openBtn {
     cursor: pointer;
+    top: 60% !important;
 }
 
 #closeBtn {
@@ -135,4 +136,12 @@ button {
 #right {
     position: relative;
     right: -25rem;
+}
+
+
+/* ! =================== OPEN BTN =================== */
+@media screen and (min-width: 768px) {
+    #openBtn {
+        top: 50% !important;
+    }
 }
