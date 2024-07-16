@@ -45,6 +45,7 @@ function countDownTo(targetDate) {
     let minutes = Math.floor((timeDiff - (days * secondsPerDay) - (hours * secondsPerHour)) / 60);
     let seconds = Math.floor((timeDiff - (days * secondsPerDay) - (hours * secondsPerHour) - (minutes * 60)))
 
+
     $("#days").html(`${days} D`);
     $("#hours").html(`${hours} h`);
     $("#minutes").html(`${minutes} m`);
