@@ -12,7 +12,7 @@ function closeNav() {
     loopForNavItems(300, -17);
     $(".side-bar").animate({ left: "-17rem" }, 1000);
     $("#openBtn").animate({ left: "0rem" }, 1000);
-
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
 }
 
 function openNav() {
