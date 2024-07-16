@@ -29,7 +29,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone 
+    git clone https://github.com/maiallam57/Egyption-Party.git
     ```
 
 2. Navigate to the project directory:
