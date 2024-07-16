@@ -61,6 +61,3 @@ This project is licensed under the MIT License.
 - For more projects and updates, follow me on GitHub: [Mai Allam](https://github.com/maiallam57)
 - Follow me on LinkedIn: [Mai Allam](https://www.linkedin.com/in/maiallam57/)
 
-## Contact
-
-For any questions or inquiries, please feel free to reach out via GitHub issues.
